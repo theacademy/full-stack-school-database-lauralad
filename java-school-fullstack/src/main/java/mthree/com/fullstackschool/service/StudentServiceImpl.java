@@ -94,7 +94,6 @@ public class StudentServiceImpl implements StudentServiceInterface {
         Student student = getStudentById(studentId);
         Course course = courseService.getCourseById(courseId);
 
-
         if (student.getStudentFirstName().equals("Student Not Found")) {
             System.out.println("Student not found");
         } else if (course.getCourseName().equals("Course Not Found")) {
